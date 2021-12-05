@@ -25,12 +25,12 @@ const UserSchema = new mongoose.Schema({
         default : []
     },
     following : {
-        type : Arrray ,
+        type : Array ,
         default : []
     },
     desc : {
         type : String,
-        require : true
+        min : 4
     },
     city : {
         type : String,

@@ -5,6 +5,7 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 
 const UserRoute = require("./routes/users");
+const AuthRoute = require("./routes/auth");
 
 const bodyParser = require("body-parser");
 
@@ -23,7 +24,8 @@ mongoose.connect('mongodb://127.0.0.1:27017/Social-Media',
 app.use(helmet());
 app.use(morgan("common"));
 
-app.use("/api/user",UserRoute);
+app.use("/api/users",UserRoute);
+app.use("/api/auth",AuthRoute);
 
 
 
