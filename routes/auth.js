@@ -1,5 +1,5 @@
 const Router = require("express").Router();
-const User = require("../models/user");
+const User = require("../models/User");
 const bcrypt = require("bcrypt");
 
 
@@ -44,5 +44,4 @@ Router.post("/login",async (req,res) => {
         res.status(500).json({message : "error 500"});
     }
 })
-
 module.exports = Router;
