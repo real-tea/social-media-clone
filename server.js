@@ -1,11 +1,12 @@
 const express = require("express");
-const dotenv = require("dotenv").config();
+// const dotenv = require("dotenv").config();
 const mongoose = require("mongoose");
 const helmet = require("helmet");
 const morgan = require("morgan");
 
 const UserRoute = require("./routes/users");
 const AuthRoute = require("./routes/auth");
+const PostRoute = require("./routes/post");
 
 const bodyParser = require("body-parser");
 
@@ -26,7 +27,7 @@ app.use(morgan("common"));
 
 app.use("/api/users",UserRoute);
 app.use("/api/auth",AuthRoute);
-
+app.use("/api/posts",PostRoute);
 
 
 
