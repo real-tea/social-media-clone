@@ -1,7 +1,7 @@
 # social-media-clone
 .
-#NodeJS 
-#MongoDB
+# NodeJS 
+# MongoDB
 
 Made a Social Media backend in NodeJS with database schema made in mongoDB .
 .
@@ -12,4 +12,4 @@ Posts -> To post images,description
 Then made API routes that fetches the posts, authenticate Users, and also helps them edit/delete posts
 
 .
-##Used Postman for API testing
+## Used Postman for API testing
